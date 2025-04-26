@@ -5,9 +5,9 @@ Use [`rich`](https://github.com/Textualize/rich) to create a [`tqdm`](https://gi
 # Example
 
 ```python
-from rich_tqdm import rich_tqdm
+from richerator import richerator
 
-for x in rich_tqdm(range(1, 31), description="Looping Demo"):
+for x in richerator(range(1, 31), description="Looping Demo"):
     print(f"step {x}")
     print("  detail A", "detail B", sep=" | ")
     if x % 3 == 0:
