@@ -2,6 +2,10 @@
 
 Use [`rich`](https://github.com/Textualize/rich) to create a [`tqdm`](https://github.com/tqdm/tqdm)-like iterator wrapper that hacks the print statement to print into a live-updating rich panel.
 
+# Install
+
+`pip install richerator`
+
 # Example
 
 ```python
@@ -17,3 +21,6 @@ for x in richerator(range(1, 31), description="Looping Demo"):
     time.sleep(0.1)
 ```
 
+gives
+
+![example](richerator_example.gif)
