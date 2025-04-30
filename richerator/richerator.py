@@ -2,7 +2,7 @@ from rich.console import Console, Group
 from rich.progress import (
     Progress,
     BarColumn,
-    TaskProgressColumn,
+    TextColumn,
     TimeElapsedColumn,
     TimeRemainingColumn,
     ProgressColumn,
@@ -59,7 +59,10 @@ def richerator(
 ):
     console = Console()
     default_cols = [
-        TaskProgressColumn(),
+        TextColumn(
+            "[progress.completed]{task.completed}/{task.total}",
+            justify="right",
+        ),
         BarColumn(),
         "[progress.percentage]{task.percentage:>3.1f}%",
         NamedTimeElapsedColumn(),
