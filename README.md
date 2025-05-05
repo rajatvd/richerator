@@ -24,3 +24,8 @@ for x in richerator(range(1, 31), description="Looping Demo"):
 gives
 
 ![example](richerator_example.gif)
+
+# TODO
+
+- [ ] auto save repeated outputs to a file if want to keep track of each iteration's output
+ 
